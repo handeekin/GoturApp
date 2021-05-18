@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.handeekin.goturapp.AnasayfaFragment"
+        android:label="AnasayfaFragment"
+        tools:layout="@layout/fragment_anasayfa">
+        <action
+            android:id="@+id/kategoriDetayGecis"
+            app:destination="@id/detaySayfaFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_aramaFragment"
+            app:destination="@id/aramaFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_kampanyaFragment"
+            app:destination="@id/kampanyaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detaySayfaFragment"
+        android:name="com.handeekin.goturapp.DetaySayfaFragment"
+        android:label="fragment_detay_sayfa"
+        tools:layout="@layout/fragment_detay_sayfa" >
+        <argument
+            android:name="urunNesne"
+            app:argType="com.handeekin.goturapp.UrunCesitleri" />
+    </fragment>
+    <fragment
+        android:id="@+id/aramaFragment"
+        android:name="com.handeekin.goturapp.AramaFragment"
+        android:label="fragment_arama"
+        tools:layout="@layout/fragment_arama" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.handeekin.goturapp.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/kampanyaFragment"
+        android:name="com.handeekin.goturapp.KampanyaFragment"
+        android:label="fragment_kampanya"
+        tools:layout="@layout/fragment_kampanya" />
+</navigation>

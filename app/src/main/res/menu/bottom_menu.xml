@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/anasayfaFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/aramaFragment"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Item"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Item"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/kampanyaFragment"
+        android:icon="@drawable/ic_baseline_pages_24"
+        android:title="Item"
+        app:showAsAction="collapseActionView" />
+</menu>
